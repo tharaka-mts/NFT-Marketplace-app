@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         primary: "15BFFD",
         dimWhite: "rgba(255, 255, 255, 0.7)",
-      }
+      },
     },
     screens: {
       xs: "480px",
