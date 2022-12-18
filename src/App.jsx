@@ -1,3 +1,5 @@
+import styles from './styles';
+
 import { 
 About,
 Creators,
@@ -10,8 +12,12 @@ TopCollection
  } from './components';
 
 const App = () => (
-    <div className='bg-[#080B2A] px-10'>
-      <Navbar />
+    <div className='bg-primary w-full overflow-hidden font-inter'>
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar />
+        </div>
+      </div>
       <div className='text-white'>
         <Hero />
         <About />
