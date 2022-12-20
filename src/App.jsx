@@ -12,7 +12,7 @@ TopCollection
  } from './components';
 
 const App = () => (
-    <div className='bg-primary w-full overflow-hidden font-inter'>
+    <div className='bg-primary w-full overflow-hidden font-inter font-light'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
