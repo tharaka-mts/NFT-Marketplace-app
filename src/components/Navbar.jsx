@@ -1,19 +1,27 @@
 import React from 'react'
-import { logo } from '../assets'
+import styles from '../styles'
+
+import { logo, search, upload } from '../assets'
+import Button from './Button'
 
 const Navbar = () => {
   return (
-    <div className='flex py-5 items-center'>
-      <div className='flex flex-row items-center'>
-          <img src={logo} alt="logo" className=' h-[43px] w-[50px] mr-4'/>
-          <h1 className='text-[32px] font-bold'>NFT <span className='text-lightBlue'>core</span></h1>
-      </div>
+    <div className='w-full flex justify-between items-center mt-4'>
+      <div className={`${styles.flexStart} items-center`}>
+          <img src={logo} alt="logo" className=' h-[48px] w-[191px]'/>
 
-        <ul className='list-none justify-end flex-1'>
-          <li>Discover</li>
-          <li>Marketplace</li>
-          <li>How it Works</li>
-        </ul>
+          <ul className='flex justify-around pt-2'>
+            <li className='ml-[4rem] mr-[3rem]'>Discover</li>
+            <li className='mr-[3rem]'>Marketplace <span className='bg-lightBlue p-2 rounded font-light'>PRO</span></li>
+            <li className=''>How it Works</li>
+          </ul>
+      </div>
+         
+        <div className='flex pt-2'>
+          <img src={search} alt="search" className='mr-10'/>
+          <Button className='mr-10 text-lightBlue rounded-full border border-lightBlue px-5'/>
+          <img src={upload} alt="upload" />
+        </div>
     </div>
   )
 }
