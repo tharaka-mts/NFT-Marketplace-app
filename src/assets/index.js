@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import search from './search.svg';
-import upload from './upload.svg';
-
-export {
-    logo,
-    search,
-    upload,
-}
+// import logo from "./logo.svg";
+export { default as logo } from "./logo.svg";
+export { default as search } from "./search.svg";
+export { default as upload } from "./upload.svg";
+export { default as beatLine } from "./beatLine.svg";
+export { default as rectangle } from "./rectangle.svg";
+export { default as slogan } from "./slogan.svg";
+export { default as vectorLine } from "./vectorLine.svg";
+export { default as vectorRounds } from "./vectorRounds.svg";
