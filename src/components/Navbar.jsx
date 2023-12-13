@@ -6,24 +6,28 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div className="w-full flex justify-between items-center mt-4">
+    <div className="flex justify-between items-center mt-6">
       <div className={`${styles.flexStart} items-center`}>
-        <img src={logo} alt="logo" className=" h-[48px] w-[191px]" />
+        <img src={logo} alt="logo" className="h-[48px] w-[191px]" />
 
-        <ul className="flex justify-around pt-2">
-          <li className="ml-[4rem] mr-[3rem]">Discover</li>
-          <li className="mr-[3rem]">
+        <ul className="flex justify-around pt-2 text-sm">
+          <li className="ml-[5rem] mr-[4rem]">Discover</li>
+          <li className="mr-[4rem]">
             Marketplace{" "}
-            <span className="bg-lightBlue p-2 rounded font-light">PRO</span>
+            <span className="bg-lightBlue p-1 rounded-sm font-light">PRO</span>
           </li>
           <li className="">How it Works</li>
         </ul>
       </div>
 
       <div className="flex pt-2">
-        <img src={search} alt="search" className="mr-10" />
-        <Button className="mr-10 text-lightBlue rounded-full border border-lightBlue px-5" />
-        <img src={upload} alt="upload" onClick={alert("done")} />
+        <img src={search} alt="search" className="mr-6" />
+        <Button
+          className="w-44 mr-5 font-medium text-lg"
+          title="Connect Wallet"
+          type="outline"
+        />
+        <img src={upload} alt="upload" />
       </div>
     </div>
   );
