@@ -1,16 +1,8 @@
 import styles from "./styles";
 
-import {
-  About,
-  BackgroundBubble,
-  Creators,
-  Footer,
-  Hero,
-  LiveAuction,
-  Navbar,
-  Roadmap,
-  TopCollection,
-} from "./components";
+import { BackgroundBubble, Navbar } from "./components";
+
+import { About, Creators, Footer, Hero, LiveAuction, Roadmap, TopCollection } from "./containers";
 
 const App = () => (
   <div
