@@ -1,4 +1,5 @@
 {
+  "homepage": "http://tharaka-mts.github.io/NFT-Marketplace-app",
   "name": "blockchain",
   "private": true,
   "version": "0.0.0",
@@ -6,11 +7,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
@@ -20,6 +24,7 @@
     "eslint": "^8.30.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.1.0",
     "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4",
     "vite": "^3.2.3"
