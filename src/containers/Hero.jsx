@@ -50,7 +50,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex-auto">
-        <Card />
+        <Card className="w-[480px] h-[300px] p-3">Horowpathange</Card>
       </div>
     </div>
   );
