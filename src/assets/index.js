@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 export { default as logo } from "./logo.svg";
 export { default as search } from "./search.svg";
 export { default as upload } from "./upload.svg";
