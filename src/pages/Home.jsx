@@ -20,13 +20,13 @@ const Home = () => {
     >
       <div className="w-[1280px] z-20 absolute">
         <BackgroundBubble className="-top-4 left-10 blur-[150px]" />
-        <BackgroundBubble className="-top-2 right-32 blur-[200px]" />
+        <BackgroundBubble className="-top-2 right-[5em] blur-[200px]" />
         <img
           src={vectorLine}
           alt="vector-line"
-          className="absolute top-[16rem] -right-5"
+          className="absolute top-[16rem] -right-5 object-fill"
         />
-        <BackgroundBubble className="top-[22rem] right-40 blur-[120px]" />
+        <BackgroundBubble className="top-[22rem] right-[12em] blur-[120px]" />
       </div>
       <div className="w-[1280px] z-50">
         <div className={`${styles.flexCenter}`}>
