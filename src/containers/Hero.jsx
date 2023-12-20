@@ -1,5 +1,4 @@
-import { arrow, beatLine } from "../assets";
-import { Card } from "../components";
+import { arrow, beatLine, rectangleHero } from "../assets";
 import Button from "../components/Button";
 
 const Hero = () => {
@@ -50,7 +49,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex-auto">
-        <Card className="w-[480px] h-[300px] p-3">Horowpathange</Card>
+        <img src={rectangleHero} alt="card" />
       </div>
     </div>
   );

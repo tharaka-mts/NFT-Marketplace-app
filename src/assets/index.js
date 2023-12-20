@@ -7,3 +7,4 @@ export { default as slogan } from "./slogan.svg";
 export { default as vectorLine } from "./vectorLine.svg";
 export { default as vectorRounds } from "./vectorRounds.svg";
 export { default as arrow } from "./arrow.svg";
+export { default as rectangleHero } from "./rectangleHero.png";
