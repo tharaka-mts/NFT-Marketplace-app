@@ -1,6 +1,5 @@
 import { auctionData } from "../assets/dummy";
 import { Button } from "../components";
-import { FaEthereum } from "react-icons/fa";
 
 const LiveAuction = () => {
   return (
@@ -12,7 +11,7 @@ const LiveAuction = () => {
           For crypto-collectibles
         </p>
       </div>
-      <div className="flex gap-16">
+      <div className="lg:flex flex-row gap-16">
         {auctionData.map((item, index) => (
           <div key={index} className="mt-16 font-inter">
             <div className="bg-rectangle bg-no-repeat p-5 bg-cover w-[384px] h-[460px]">
