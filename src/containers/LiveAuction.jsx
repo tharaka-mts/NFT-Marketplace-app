@@ -1,8 +1,10 @@
+import { auctionData } from "../assets/dummy";
 import { Button } from "../components";
+import { FaEthereum } from "react-icons/fa";
 
 const LiveAuction = () => {
   return (
-    <div>
+    <div className="mt-24">
       <div className="text-center">
         <h1 className="font-clash font-normal text-[32px]"> Live Auction</h1>
         <p className="font-inter">
@@ -10,18 +12,45 @@ const LiveAuction = () => {
           For crypto-collectibles
         </p>
       </div>
-      <div>
-        <div className="bg-rectangle bg-no-repeat p-3 bg-cover w-[384px] h-[460px]">
-          <div className="flex justify-between">
-            <div>
-              <h3>Current bid</h3>
-              <p>3.2 ETH</p>
-            </div>
-            <div>
-              <Button className="font-inter" title="Place bid" type="solid" />
+      <div className="flex gap-16">
+        {auctionData.map((item, index) => (
+          <div key={index} className="mt-16 font-inter">
+            <div className="bg-rectangle bg-no-repeat p-5 bg-cover w-[384px] h-[460px]">
+              <div className="flex justify-between">
+                <div>
+                  <h3>Current bid</h3>
+                  <div className="flex items-center gap-1 text-lightBlue font-medium">
+                    <p> {item.price}</p>
+                  </div>
+                </div>
+                <div>
+                  <Button
+                    className="font-inter"
+                    title="Place bid"
+                    type="solid"
+                  />
+                </div>
+              </div>
+              <div className="mt-3 w-[345px] h-[290px] rounded-md overflow-hidden">
+                <img src={item.image} alt="img" />
+              </div>
+              <div className="mt-4">
+                <p>
+                  {item.status} <br />
+                </p>
+                <div className="flex mt-2 items-center gap-3 text-sm text-slate-400">
+                  <img
+                    src={item.userImage}
+                    alt="userimg"
+                    width="24px"
+                    className="rounded-full"
+                  />
+                  <p>{item.name}</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
