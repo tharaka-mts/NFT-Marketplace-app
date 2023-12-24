@@ -15,7 +15,7 @@ module.exports = {
         clash: ["Clash Display", "sans-serif"],
       },
       backgroundImage: {
-        rectangle: "url('./src/assets/rectangle.svg')",
+        rectangle: "url('./src/assets/rectangle.png')",
       },
     },
     screens: {
