@@ -1,4 +1,4 @@
-import { arrow, beatLine, rectangleHero } from "../assets";
+import { arrow, beatLine, rectangleHero, vectorLine } from "../assets";
 import Button from "../components/Button";
 
 const Hero = () => {
