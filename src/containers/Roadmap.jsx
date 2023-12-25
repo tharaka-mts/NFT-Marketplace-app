@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../components";
+import { RoadMapCard } from "../components";
 import { roadMapData1, roadMapData2 } from "../assets/dummy";
 
 const Roadmap = () => {
@@ -16,22 +16,24 @@ const Roadmap = () => {
         <div className="basis-1/2 relative mt-12">
           {roadMapData1.map((item, index) => (
             <div key={index} className="flex items-center justify-between">
-              <Card
-                className="my-12"
+              <RoadMapCard
+                className="my-12 outline outline-offset-4 outline-sky-400 rounded-xl"
                 month={item.month}
                 title={item.title}
                 desc={item.description}
               />
-              <div className="absolute right-[-1em] h-[30px] w-[30px] rounded-full bg-sky-500" />
+              <div class="border-t-2 border-dotted border-lightBlue h-1 w-full" />
+              <div className="absolute right-[-0.9em] h-[30px] w-[30px] rounded-full bg-lightBlue" />
             </div>
           ))}
         </div>
         <div className="basis-1/2 relative mt-36">
           {roadMapData2.map((item, index) => (
             <div key={index} className="flex items-center justify-end">
-              <div className="absolute left-[-1em] h-[30px] w-[30px] rounded-full bg-sky-500" />
-              <Card
-                className="my-12"
+              <div className="absolute left-[-0.9em] h-[30px] w-[30px] rounded-full bg-lightBlue" />
+              <div class="border-t-2 border-dotted border-lightBlue h-1 w-full" />
+              <RoadMapCard
+                className="my-12 outline outline-offset-4 outline-sky-400 rounded-xl"
                 month={item.month}
                 title={item.title}
                 desc={item.description}
