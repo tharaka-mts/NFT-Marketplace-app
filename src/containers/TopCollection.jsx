@@ -31,13 +31,13 @@ const TopCollection = () => {
                 </p>
               </div>
               <div className="flex my-2 rounded-md w-full h-[280px]">
-                <img className="basis-1/2 py-1" src={data.image} alt="img" />
+                <img className="basis-1/2 py-1" src={data.image.img1} alt="img" />
                 <div className="flex-row py-1 basis-1/2 justify-between">
                   <div className="flex-1 pb-1 px-1 h-[50%] overflow-hidden rounded-lg">
-                    <img src={data.image} alt="img" />
+                    <img src={data.image.img2} alt="img" />
                   </div>
                   <div className="flex-1 p-1 h-[50%] overflow-hidden rounded-lg">
-                    <img src={data.image} alt="img" />
+                    <img src={data.image.img3} alt="img" />
                   </div>
                 </div>
               </div>

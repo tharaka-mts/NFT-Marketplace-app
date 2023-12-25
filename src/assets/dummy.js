@@ -67,19 +67,19 @@ export const roadMapData2 = [
 export const topCollectionData = [
   {
     category: "Punk Art Collection",
-    image: img1,
+    image: { img1:img1 , img2:img2, img3:img3 },
     name: "John Doe",
     userImage: u1,
   },
   {
     category: "NFT Art Collection",
-    image: img2,
+    image: { img1:img3, img2:img2, img3:img1 },
     name: "James William",
     userImage: u2,
   },
   {
     category: "Illustration Collection",
-    image: img3,
+    image: { img1:img2, img2:img1, img3 },
     name: "Emily Smith",
     userImage: u3,
   },
