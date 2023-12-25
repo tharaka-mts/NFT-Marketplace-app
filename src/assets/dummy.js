@@ -9,14 +9,14 @@ export const auctionData = [
     name: "John Doe",
   },
   {
-    price: "2 BTC",
+    price: "2.2 BTC",
     image: img2,
     userImage: u2,
     status: "Golden Hour",
     name: "Emily Smith",
   },
   {
-    price: "4 BNB",
+    price: "22.3 BNB",
     image: img3,
     userImage: u3,
     status: "Golden Hour",

@@ -14,7 +14,7 @@ const LiveAuction = () => {
       <div className="lg:flex flex-row gap-16">
         {auctionData.map((item, index) => (
           <div key={index} className="mt-16 font-inter">
-            <div className="bg-rectangle bg-no-repeat p-5 bg-cover w-[384px] h-[460px]">
+            <div className="bg-gradient-to-br from-indigo-300/20 to-purple-300/10 border-solid border-2 border-violet-400/30 rounded-xl p-5 w-[384px] h-[460px]">
               <div className="flex justify-between">
                 <div>
                   <h3>Current bid</h3>

@@ -14,9 +14,6 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
         clash: ["Clash Display", "sans-serif"],
       },
-      backgroundImage: {
-        rectangle: "url('./src/assets/rectangle.png')",
-      },
     },
     screens: {
       xs: "480px",
