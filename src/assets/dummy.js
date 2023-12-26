@@ -64,3 +64,23 @@ export const roadMapData2 = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ];
+export const topCollectionData = [
+  {
+    category: "Punk Art Collection",
+    image: { img1: img1, img2: img2, img3: img3 },
+    name: "John Doe",
+    userImage: u1,
+  },
+  {
+    category: "NFT Art Collection",
+    image: { img1: img3, img2: img2, img3: img1 },
+    name: "James William",
+    userImage: u2,
+  },
+  {
+    category: "Illustration Collection",
+    image: { img1: img2, img2: img1, img3 },
+    name: "Emily Smith",
+    userImage: u3,
+  },
+];
