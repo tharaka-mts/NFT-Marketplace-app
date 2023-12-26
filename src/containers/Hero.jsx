@@ -3,8 +3,8 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <div className="flex mt-24">
-      <div className="flex-auto">
+    <div className="flex flex-wrap mt-24">
+      <div className="flex-1">
         <h3 className="text-[80px] font-clash font-[600] leading-[5rem]">
           Super NFT
           <br />
@@ -48,7 +48,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex-auto">
+      <div className="flex-1">
         <img src={rectangleHero} alt="card" />
       </div>
     </div>
