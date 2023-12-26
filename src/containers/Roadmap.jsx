@@ -22,7 +22,7 @@ const Roadmap = () => {
                 title={item.title}
                 desc={item.description}
               />
-              <div class="border-t-2 border-dotted border-lightBlue h-1 w-full" />
+              <div className="border-t-2 border-dotted border-lightBlue h-1 w-full" />
               <div className="absolute right-[-0.9em] h-[30px] w-[30px] rounded-full bg-lightBlue" />
             </div>
           ))}
@@ -31,7 +31,7 @@ const Roadmap = () => {
           {roadMapData2.map((item, index) => (
             <div key={index} className="flex items-center justify-end">
               <div className="absolute left-[-0.9em] h-[30px] w-[30px] rounded-full bg-lightBlue" />
-              <div class="border-t-2 border-dotted border-lightBlue h-1 w-full" />
+              <div className="border-t-2 border-dotted border-lightBlue h-1 w-full" />
               <RoadMapCard
                 className="my-12 outline outline-offset-4 outline-sky-400 rounded-xl"
                 month={item.month}
