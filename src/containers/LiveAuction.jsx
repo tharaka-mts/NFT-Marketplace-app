@@ -1,5 +1,5 @@
 import { auctionData } from "../assets/dummy";
-import { Button } from "../components";
+import { BackgroundBubble, Button } from "../components";
 
 const LiveAuction = () => {
   return (
@@ -11,10 +11,11 @@ const LiveAuction = () => {
           For crypto-collectibles
         </p>
       </div>
-      <div className="flex flex-wrap gap-16">
+      <div className="relative flex flex-wrap gap-16">
+        <BackgroundBubble className="-bottom-16 -left-12 blur-[160px]" />
         {auctionData.map((item, index) => (
-          <div key={index} className="mt-16 font-inter">
-            <div className="bg-gradient-to-br from-indigo-300/20 to-purple-300/10 border-solid border-2 border-violet-400/30 rounded-xl p-5 w-[384px] h-[460px]">
+          <div key={index} className="mt-16 font-inter z-50">
+            <div className="bg-gradient-to-br from-indigo-300/20 to-purple-300/10 border-solid border-2 border-violet-400/30 rounded-xl backdrop-blur-md p-5 w-[384px] h-[460px]">
               <div className="flex justify-between">
                 <div>
                   <h3>Current bid</h3>

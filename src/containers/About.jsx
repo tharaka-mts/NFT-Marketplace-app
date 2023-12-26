@@ -1,5 +1,5 @@
 import { aboutUsCards, vectorRounds } from "../assets";
-import { Button } from "../components";
+import { BackgroundBubble, Button } from "../components";
 
 const About = () => {
   return (
@@ -9,7 +9,9 @@ const About = () => {
         alt="vactor-rounds"
         className="absolute left-[8em] top-[3em]"
       />
-      <div className="flex items-center rounded-lg p-12 bg-gradient-to-tr from-blue-500/5 to-blue-700/10 backdrop-blur-sm z-10">
+      <BackgroundBubble className="-bottom-16 -left-12 blur-[160px] opacity-75" />
+      <BackgroundBubble className="-top-16 -right-12 blur-[160px] opacity-75" />
+      <div className="relative flex items-center rounded-lg p-12 bg-gradient-to-tr from-blue-500/5 to-blue-700/10 backdrop-blur-sm z-40">
         <img src={aboutUsCards} alt="nft-cards" />
         <div className="font-clash px-5">
           <h1 className="font-medium text-[45px]">Why choose us?</h1>
