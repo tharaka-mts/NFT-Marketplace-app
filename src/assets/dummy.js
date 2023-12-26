@@ -84,3 +84,51 @@ export const topCollectionData = [
     userImage: u3,
   },
 ];
+
+export const creatorData = [
+  {
+    name: "John Doe",
+    avatar: u1,
+    coin: "2.1 ETH",
+  },
+  {
+    name: "Sarah Doe",
+    avatar: u2,
+    coin: "5.8 BTC",
+  },
+  {
+    name: "William Smith",
+    avatar: u3,
+    coin: "2.3 BTC",
+  },
+  {
+    name: "John Doe",
+    avatar: u1,
+    coin: "2.1 ETH",
+  },
+  {
+    name: "Sarah Doe",
+    avatar: u2,
+    coin: "5.8 BTC",
+  },
+  {
+    name: "William Smith",
+    avatar: u3,
+    coin: "2.3 BTC",
+  },
+  {
+    name: "John Doe",
+    avatar: u1,
+    coin: "2.1 ETH",
+  },
+  {
+    name: "Sarah Doe",
+    avatar: u2,
+    coin: "5.8 BTC",
+  },
+  {
+    name: "William Smith",
+    avatar: u3,
+    coin: "2.3 BTC",
+  },
+];
