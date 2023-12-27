@@ -22,7 +22,7 @@ const Home = () => {
         <BackgroundBubble className="-top-[1em] right-[3em] blur-[200px] " />
         <BackgroundBubble className="top-[22em] right-[12em] blur-[120px] " />
       </div>
-      <div className="w-[1280px] z-50">
+      <div className="w-[1280px] px-5 z-50">
         <div className={`${styles.flexCenter}`}>
           <div className={`${styles.boxWidth} md:block hidden`}>
             <Navbar />

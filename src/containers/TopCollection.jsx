@@ -18,7 +18,7 @@ const TopCollection = () => {
         <BackgroundBubble className="-top-16 -left-3 blur-[180px]" />
         <BackgroundBubble className="-bottom-16 -right-3 blur-[160px]" />
         {topCollectionData.map((data, index) => (
-          <div className="relative">
+          <div key={index} className="relative">
             <BackgroundBubble
               className={`top-2 left-2 blur-md w-[60px] h-[60px] opacity-80 ${
                 index === 0
@@ -28,10 +28,7 @@ const TopCollection = () => {
                   : `bg-sky-500`
               }`}
             />
-            <div
-              key={index}
-              className="relative z-40 h-[442px] w-[384px] bg-gradient-to-br from-sky-400/10 to-purple-400/10 rounded-lg border-2 backdrop-blur-md border-sky-500/30 p-5 overflow-clip"
-            >
+            <div className="relative z-40 h-[442px] w-[384px] bg-gradient-to-br from-sky-400/10 to-purple-400/10 rounded-lg border-2 backdrop-blur-md border-sky-500/30 p-5 overflow-clip">
               <div className="font-clash overflow-clip">
                 <p className="text-sm text-slate-300">Created By</p>
                 <div className="flex mt-2">

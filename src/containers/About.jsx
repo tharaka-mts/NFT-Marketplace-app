@@ -7,7 +7,7 @@ const About = () => {
       <img
         src={vectorRounds}
         alt="vactor-rounds"
-        className="absolute left-[8em] top-[3em]"
+        className="absolute left-[8em] top-[1em] scale-75"
       />
       <BackgroundBubble className="-bottom-16 -left-12 blur-[160px] opacity-75" />
       <BackgroundBubble className="-top-16 -right-12 blur-[160px] opacity-75" />
