@@ -24,7 +24,7 @@ const Home = () => {
       </div>
       <div className="w-[1280px] px-5 z-50">
         <div className={`${styles.flexCenter}`}>
-          <div className={`${styles.boxWidth} md:block hidden`}>
+          <div className={`${styles.boxWidth}`}>
             <Navbar />
           </div>
         </div>
