@@ -11,7 +11,7 @@ const LiveAuction = () => {
           For crypto-collectibles
         </p>
       </div>
-      <div className="relative flex flex-wrap gap-16">
+      <div className="relative flex flex-wrap gap-5">
         <BackgroundBubble className="-bottom-16 -left-12 blur-[160px]" />
         {auctionData.map((item, index) => (
           <div key={index} className="mt-16 font-inter z-50">
