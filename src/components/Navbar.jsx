@@ -1,11 +1,12 @@
 import styles from "../styles";
+import { CgMenuRight } from "react-icons/cg";
 
 import { logo, search, upload } from "../assets";
 import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center mt-6 text-white">
+    <div className="flex items-center mt-6 text-white md:justify-start justify-between">
       <div className={`${styles.flexStart} items-center grow-0`}>
         <img
           src={logo}
@@ -13,7 +14,7 @@ const Navbar = () => {
           className="h-[48px] w-[191px] hover:cursor-pointer"
         />
       </div>
-      <div className="grow flex items-center justify-between">
+      <div className="grow md:flex hidden items-center justify-between">
         <div className="ml-24">
           <ul className="flex gap-10 pt-2 text-sm">
             <li className="hover:cursor-pointer hover:text-lightBlue">
@@ -48,6 +49,12 @@ const Navbar = () => {
             className="hover:cursor-pointer hover:opacity-80"
           />
         </div>
+      </div>
+      <div className="md:hidden">
+        <CgMenuRight
+          className="w-[36px] h-[36px]"
+          onClick={() => console.log("done")}
+        />
       </div>
     </div>
   );
