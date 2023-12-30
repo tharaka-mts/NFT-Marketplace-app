@@ -1,10 +1,18 @@
 import styles from "../styles";
 import { CgMenuRight } from "react-icons/cg";
+import { RxCross2 } from "react-icons/rx";
 
 import { logo, search, upload } from "../assets";
 import Button from "./Button";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [navmenu, setNavmenu] = useState(true);
+
+  const handleNavmenu = () => {
+    setNavmenu(!navmenu);
+  };
+
   return (
     <div className="flex items-center mt-6 text-white md:justify-start justify-between">
       <div className={`${styles.flexStart} items-center grow-0`}>
@@ -50,11 +58,12 @@ const Navbar = () => {
           />
         </div>
       </div>
-      <div className="md:hidden">
-        <CgMenuRight
-          className="w-[36px] h-[36px]"
-          onClick={() => console.log("done")}
-        />
+      <div className="md:hidden" onClick={handleNavmenu}>
+        {navmenu ? (
+          <CgMenuRight className="w-[36px] h-[36px]" />
+        ) : (
+          <RxCross2 className="w-[36px] h-[36px]" />
+        )}
       </div>
     </div>
   );
