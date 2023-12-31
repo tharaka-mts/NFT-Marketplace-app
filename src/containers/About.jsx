@@ -7,15 +7,15 @@ const About = () => {
       <img
         src={vectorRounds}
         alt="vactor-rounds"
-        className="absolute left-[8em] top-[1em] scale-75"
+        className="absolute ss:left-[8em] md:left-[20%] left-2 top-[1em] scale-75"
       />
       <BackgroundBubble className="-bottom-16 -left-12 blur-[160px] opacity-75" />
       <BackgroundBubble className="-top-16 -right-12 blur-[160px] opacity-75" />
-      <div className="relative flex flex-wrap items-center rounded-lg p-12 bg-gradient-to-tr from-blue-500/5 to-blue-700/10 backdrop-blur-sm z-40">
+      <div className="relative flex flex-wrap items-center md:justify-center justify-around rounded-lg p-12 bg-gradient-to-tr from-blue-500/5 to-blue-700/10 backdrop-blur-sm z-40">
         <img
           src={aboutUsCards}
           alt="nft-cards"
-          className="w-[497px] h-[325px] flex-1"
+          className="w-auto h-auto lg:w-[497px] lg:h-[325px] flex"
         />
         <div className="font-clash px-5 w-[600px]">
           <h1 className="font-medium text-[45px]">Why choose us?</h1>
