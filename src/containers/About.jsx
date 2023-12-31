@@ -11,7 +11,7 @@ const About = () => {
       />
       <BackgroundBubble className="-bottom-16 -left-12 blur-[160px] opacity-75" />
       <BackgroundBubble className="-top-16 -right-12 blur-[160px] opacity-75" />
-      <div className="relative flex flex-wrap items-center md:justify-center justify-around rounded-lg p-12 bg-gradient-to-tr from-blue-500/5 to-blue-700/10 backdrop-blur-sm z-40">
+      <div className="relative flex flex-wrap items-center md:justify-center justify-around rounded-lg xs:p-12 p-6 bg-gradient-to-tr from-blue-500/5 to-blue-700/10 backdrop-blur-sm z-40">
         <img
           src={aboutUsCards}
           alt="nft-cards"
