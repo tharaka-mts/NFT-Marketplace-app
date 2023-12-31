@@ -12,27 +12,27 @@ const Roadmap = () => {
           For crypto-collectibles
         </p>
       </div>
-      <div className="md:flex flex-row relative">
+      <div className="lg:flex flex-wrap justify-center relative">
         <BackgroundBubble className="bottom-1/4 -right-12 blur-[160px]" />
-        <div className="basis-1/2 relative mt-12 z-40">
+        <div className="lg:basis-1/2 basis-0 relative mt-12 z-40">
           {roadMapData1.map((item, index) => (
-            <div key={index} className="flex items-center justify-between">
+            <div key={index} className="flex items-center lg:justify-between justify-center">
               <RoadMapCard
                 className="my-12 outline outline-offset-4 outline-sky-400 rounded-xl"
                 month={item.month}
                 title={item.title}
                 desc={item.description}
               />
-              <div className="border-t-2 border-dotted border-lightBlue h-1 w-full" />
-              <div className="absolute right-[-0.9em] h-[30px] w-[30px] rounded-full bg-lightBlue" />
+              <div className="border-t-2 border-dotted border-lightBlue h-1 w-full lg:block hidden" />
+              <div className="absolute lg:block hidden right-[-0.9em] h-[30px] w-[30px] rounded-full bg-lightBlue" />
             </div>
           ))}
         </div>
-        <div className="basis-1/2 relative mt-36 z-40">
+        <div className="lg:basis-1/2 basis-0 relative lg:mt-36 z-40">
           {roadMapData2.map((item, index) => (
-            <div key={index} className="flex items-center justify-end">
-              <div className="absolute left-[-0.9em] h-[30px] w-[30px] rounded-full bg-lightBlue" />
-              <div className="border-t-2 border-dotted border-lightBlue h-1 w-full" />
+            <div key={index} className="flex items-center lg:justify-end justify-center">
+              <div className="absolute lg:block hidden left-[-0.9em] h-[30px] w-[30px] rounded-full bg-lightBlue" />
+              <div className="border-t-2 border-dotted border-lightBlue h-1 w-full lg:block hidden" />
               <RoadMapCard
                 className="my-12 outline outline-offset-4 outline-sky-400 rounded-xl"
                 month={item.month}

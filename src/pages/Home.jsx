@@ -17,12 +17,12 @@ const Home = () => {
     <div
       className={`bg-primary w-full flex justify-center font-inter font-light overflow-hidden`}
     >
-      <div className="lg:w-[1280px] md:w-[800px] w-[640px] z-20 absolute">
+      <div className="lg:w-[1280px] md:w-[800px] sm:w-[640px] w-full z-20 absolute">
         <BackgroundBubble className="-top-[1em] -left-[2em] blur-[150px] " />
         <BackgroundBubble className="-top-[1em] right-[3em] blur-[200px] " />
         <BackgroundBubble className="top-[22em] right-[12em] blur-[120px] " />
       </div>
-      <div className="w-[1280px] px-5 z-50">
+      <div className="lg:w-[1280px] w-full z-50">
         <div className={`${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar />

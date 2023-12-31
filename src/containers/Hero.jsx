@@ -1,11 +1,11 @@
-import { arrow, beatLine, rectangleHero, vectorLine } from "../assets";
+import { arrow, beatLine, rectangleHero } from "../assets";
 import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <div className="flex flex-wrap mt-24">
+    <div className="flex md:flex-nowrap flex-wrap gap-5 mt-24">
       <div className="flex-1">
-        <h3 className="text-[80px] font-clash font-[600] leading-[5rem]">
+        <h3 className="text-[5rem] font-clash font-[600] leading-[5rem]">
           Super NFT
           <br />
           <span className="font-[400]">Marketplace</span>
@@ -48,7 +48,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex-1">
+      <div className="flex">
         <img src={rectangleHero} alt="card" />
       </div>
     </div>
