@@ -4,7 +4,7 @@ import { Button } from "../components";
 
 const Creators = () => {
   return (
-    <div className="mt-24">
+    <div className="mt-24 lg:px-8 xs:px-6 px-4">
       <div className="text-center">
         <h1 className="font-clash font-semibold text-[32px]"> Our Creator</h1>
         <p className="font-inter">
@@ -22,7 +22,7 @@ const Creators = () => {
               <img
                 src={data.avatar}
                 alt="user"
-                className="rounded-full w-[64px] h-[64px]"
+                className="rounded-full xs:w-[64px] xs:h-[64px] w-[48px] h-[48px]"
               />
               <div className="ml-5">
                 <p className="text-xl font-normal">{data.name}</p>
