@@ -3,7 +3,7 @@ import { BackgroundBubble, Button } from "../components";
 
 const TopCollection = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 lg:px-8 xs:px-6 px-4">
       <div className="text-center">
         <h1 className="font-clash font-semibold text-[32px]">
           {" "}
@@ -28,7 +28,7 @@ const TopCollection = () => {
                   : `bg-sky-500`
               }`}
             />
-            <div className="relative z-40 h-[442px] w-[384px] bg-gradient-to-br from-sky-400/10 to-purple-400/10 rounded-lg border-2 backdrop-blur-md border-sky-500/30 p-5 overflow-clip">
+            <div className="relative z-40 mxs:h-[442px] mxs:w-[384px] w-full h-full bg-gradient-to-br from-sky-400/10 to-purple-400/10 rounded-lg border-2 backdrop-blur-md border-sky-500/30 p-5 overflow-clip">
               <div className="font-clash overflow-clip">
                 <p className="text-sm text-slate-300">Created By</p>
                 <div className="flex mt-2">
@@ -42,7 +42,7 @@ const TopCollection = () => {
                     {data.name}
                   </p>
                 </div>
-                <div className="flex my-2 rounded-md w-full h-[280px]">
+                <div className="flex my-2 rounded-md w-full mxs:h-[280px] h-[250px]">
                   <img
                     className="basis-1/2 py-1"
                     src={data.image.img1}

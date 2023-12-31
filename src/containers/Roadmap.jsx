@@ -4,7 +4,7 @@ import { roadMapData1, roadMapData2 } from "../assets/dummy";
 
 const Roadmap = () => {
   return (
-    <div className="mt-24">
+    <div className="mt-24 lg:px-8 xs:px-6 px-4">
       <div className="text-center">
         <h1 className="font-clash font-semibold text-[32px]"> Road map 2023</h1>
         <p className="font-inter">
