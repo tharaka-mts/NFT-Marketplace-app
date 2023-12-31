@@ -12,15 +12,15 @@ const Footer = () => {
   return (
     <div className="relative mt-24">
       <BackgroundBubble className="blur-[180px] left-[-4rem] top-[-3rem]" />
-      <BackgroundStar className="w-[50px] h-[50px] right-[22rem] top-14" />
+      <BackgroundStar className="w-[50px] h-[50px] ss:right-[22rem] right-5 top-14" />
       <BackgroundStar className="w-[30px] h-[30px] right-[50%] top-1/2" />
       <BackgroundStar className="w-[20px] h-[20px] left-[20rem] bottom-20" />
       <BackgroundBubble className="blur-[120px] right-[1rem] bottom-[-2rem] opacity-75" />
-      <div className="rounded-lg pt-16 pb-6 px-24 bg-gradient-to-tr from-violet-400/10 to-sky-400/10 backdrop-blur-[6px] z-40 relative">
+      <div className="rounded-lg pt-16 pb-6 md:px-24 xs:px-10 px-5 bg-gradient-to-tr from-violet-400/10 to-sky-400/10 backdrop-blur-[6px] z-40 relative">
         <div className="flex flex-wrap font-clash justify-between">
           <div>
             <img src={logo} alt="logo" />
-            <p className="mt-5 w-[320px]">
+            <p className="mt-5 ss:w-[320px] w-full">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
               rerum voluptates quia iusto neque facilis dolorum.
             </p>
