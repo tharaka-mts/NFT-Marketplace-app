@@ -21,11 +21,13 @@ const Hero = () => {
             title="Connect Wallet"
             type="solid"
           />
-          <p className="ml-10 text-lightBlue">Create NFTs </p>
+          <p className="ml-10 text-lightBlue hover:cursor-pointer">
+            Create NFTs{" "}
+          </p>
           <img src={arrow} alt="arrow" className="ml-4" />
         </div>
         <h3 className="text-xl font-medium">Last 7 days popular search</h3>
-        <div className="flex flex-wrap gap-2 mt-5 text-xs">
+        <div className="flex flex-wrap gap-2 mt-5 text-xs hover:cursor-pointer">
           <p className="rounded-full bg-lightBlue px-3 py-1">All</p>
           <p className="rounded-full border border-dimWhite px-3 py-1">Music</p>
           <p className="rounded-full border border-dimWhite px-3 py-1">
@@ -33,7 +35,7 @@ const Hero = () => {
           </p>
           <p className="rounded-full border border-dimWhite px-3 py-1">Games</p>
         </div>
-        <div className="flex flex-wrap gap-2 mt-3 text-xs">
+        <div className="flex flex-wrap gap-2 mt-3 text-xs hover:cursor-pointer">
           <p className="rounded-full border border-dimWhite px-3 py-1">
             Sports
           </p>
@@ -52,7 +54,7 @@ const Hero = () => {
         <img
           src={rectangleHero}
           alt="card"
-          className="md:scale-100 sm:scale-75 ss:scale-75 xs:scale-[60%] ss:block hidden"
+          className="md:scale-100 sm:scale-75 ss:scale-75 xs:scale-[60%] ss:block hidden "
         />
       </div>
     </div>

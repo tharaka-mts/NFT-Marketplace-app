@@ -15,7 +15,7 @@ const About = () => {
         <img
           src={aboutUsCards}
           alt="nft-cards"
-          className="w-auto h-auto md:w-[450px] md:h-[275px] lg:w-[497px] lg:h-[325px] flex"
+          className="w-auto h-auto md:w-[450px] md:h-[275px] lg:w-[497px] lg:h-[325px] flex hover:cursor-pointer"
         />
         <div className="font-clash px-5 w-[600px]">
           <h1 className="font-medium text-[45px]">Why choose us?</h1>
