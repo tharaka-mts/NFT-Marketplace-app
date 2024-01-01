@@ -16,9 +16,9 @@ const Roadmap = () => {
         <BackgroundBubble className="bottom-1/4 -right-12 blur-[160px]" />
         <div className="lg:basis-1/2 basis-0 relative mt-12 z-40">
           {roadMapData1.map((item, index) => (
-            <div key={index} className="flex items-center lg:justify-between justify-center">
+            <div key={index} className="flex items-center lg:justify-between justify-center ">
               <RoadMapCard
-                className="my-12 outline outline-offset-4 outline-sky-400 rounded-xl"
+                className="my-12 outline outline-offset-4 outline-sky-400 rounded-xl hover:cursor-pointer"
                 month={item.month}
                 title={item.title}
                 desc={item.description}
@@ -34,7 +34,7 @@ const Roadmap = () => {
               <div className="absolute lg:block hidden left-[-0.9em] h-[30px] w-[30px] rounded-full bg-lightBlue" />
               <div className="border-t-2 border-dotted border-lightBlue h-1 w-full lg:block hidden" />
               <RoadMapCard
-                className="my-12 outline outline-offset-4 outline-sky-400 rounded-xl"
+                className="my-12 outline outline-offset-4 outline-sky-400 rounded-xl hover:cursor-pointer"
                 month={item.month}
                 title={item.title}
                 desc={item.description}
